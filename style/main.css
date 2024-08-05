@@ -56,7 +56,7 @@ button:hover {
 }
 
 .header__navbar {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header__navbar-menu {
