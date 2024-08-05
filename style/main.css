@@ -6,6 +6,10 @@
 
 body {
     background-color: #fff;
+    background-image: url(/images/image.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1440px;
 }
 
 li {
@@ -57,6 +61,7 @@ button:hover {
 
 .header__navbar {
     justify-content: space-between;
+
 }
 
 .header__navbar-menu {
@@ -100,7 +105,7 @@ header button img {
     gap: 50px;
     flex-wrap: wrap;
     margin-top: 100px;
-    justify-content: center;
+    justify-content: start;
 }
 
 .main__container div:last-child img:first-child {
