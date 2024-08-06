@@ -474,12 +474,12 @@ header button img {
 
 .practice__box-info .practice__link {
     gap: 10px;
-    width: 140px;
+    width: 150px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 37px;
     border: 2px solid #FF685B;
     background-color: #fff;
