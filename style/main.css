@@ -734,9 +734,6 @@ footer {
     }
 }
 @media screen and (max-width: 850px) {
-    body{
-        background-image: none;
-    }
     .main__container div h1{
         font-size: 45px;
     }
@@ -756,7 +753,9 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-
+body{
+        background-image: none;
+}
     .header__navbar-menu,
     .header__login {
         display: none;
