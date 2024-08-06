@@ -473,12 +473,12 @@ header button img {
 }
 
 .practice__box-info .practice__link {
+    gap: 10px;
     width: 200px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
     border-radius: 37px;
     border: 2px solid #FF685B;
     background-color: #fff;
