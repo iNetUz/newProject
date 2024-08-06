@@ -729,9 +729,6 @@ footer {
     background-color: #f9f9f9;
 }
 @media screen and (max-width: 1180px) {
-    body{
-        background-image: none;
-    }
     .container2{
         width: 900px;
     }
