@@ -5,10 +5,13 @@
 }
 
 body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
-    background-image: url(/images/image.png);
+    background-image: url(../images/image.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center top;
     background-size: 1440px;
 }
 
@@ -46,6 +49,11 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.container2{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .item.center {
     justify-content: center;
@@ -60,11 +68,16 @@ button:hover {
 }
 
 .header__navbar {
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 .header__navbar-menu {
+    gap: 30px;
+    font-size: 20px;
+    color: #737373;
+}
+.header__navbar-menu2 {
     gap: 30px;
     font-size: 20px;
     color: #737373;
@@ -108,34 +121,20 @@ header button img {
     justify-content: start;
 }
 
-.main__container div:last-child img:first-child {
-    width: 520px;
-    height: 626.4px;
-    position: absolute;
-    border-radius: 50px 0px 0px 0px;
-}
-
-.main__container div:last-child img:last-child {
-    right: 150px;
-    height: 757px;
-    width: 733.97px;
-    position: relative;
-}
-
-.main__container div:first-child h5 {
+.main__container div h5 {
     font-size: 20px;
     color: #FF685B;
     margin: 25px;
 }
 
-.main__container div:first-child h1 {
+.main__container div h1 {
     font-size: 58px;
     line-height: 80px;
     color: #252B42;
     margin: 25px;
 }
 
-.main__container div:first-child p {
+.main__container div p {
     font-size: 20px;
     line-height: 30px;
     color: #737373;
@@ -143,9 +142,9 @@ header button img {
 }
 
 .main__container-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .main__container-btn button:first-child {
@@ -164,7 +163,8 @@ header button img {
 }
 
 .customers {
-    gap: 80px;
+    gap: 50px;
+    max-width: 900px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -204,8 +204,7 @@ header button img {
 
 .box-item {
     padding-top: 40px;
-    padding-left: 40px;
-    width: 350px;
+    width: 300px;
     height: 350px;
     margin-top: 100px;
     background-color: #fff;
@@ -320,7 +319,6 @@ header button img {
 /* practice section style */
 
 .practice {
-    padding: 0px 195px 0px 195px;
     flex-wrap: wrap;
     padding-top: 100px;
     background-color: #E5F9F7;
@@ -330,8 +328,8 @@ header button img {
 .practice__top{
     display: flex;
     margin-top: 100px;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
 }
 
 .practice__top h6 {
@@ -724,10 +722,40 @@ footer {
 .footer__bottom {
     height: 70px;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 100px;
     align-items: center;
     justify-content: space-around;
     background-color: #f9f9f9;
+}
+@media screen and (max-width: 1180px) {
+    body{
+        background-image: none;
+    }
+    .container2{
+        width: 900px;
+    }
+}
+@media screen and (max-width: 850px) {
+    body{
+        background-image: none;
+    }
+    .main__container div h1{
+        font-size: 45px;
+    }
+    .main__container div p{
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 366px) {
+    .main__container div h1{
+        font-size: 35px;
+    }
+    .main__container div p{
+        font-size: 10px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -736,7 +764,9 @@ footer {
     .header__login {
         display: none;
     }
-
+    .container{
+        width: 740px;
+    }
     .footer__input input {
         width: 300px;
     }
@@ -759,6 +789,7 @@ footer {
     .header__navbar-menu2 {
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 500px) {
