@@ -477,8 +477,9 @@ header button img {
     width: 200px;
     height: 50px;
     display: flex;
+    padding-left: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     border-radius: 37px;
     border: 2px solid #FF685B;
     background-color: #fff;
